@@ -1,11 +1,11 @@
 import { useRef } from "react";
-import AboutMe from "../components/aboutMe/aboutMe";
-import Archiving from "../components/archiving/archiving";
-import Footer from "../components/footer/footer";
-import Landing from "../components/landing/landing";
-import Navbar from "../components/navbar/navbar";
-import Project from "../components/project/project";
-import Skills from "../components/skills/skills";
+import AboutMe from "../../aboutMe/aboutMe";
+import Archiving from "../../archiving/archiving";
+import Footer from "../../footer/footer";
+import Landing from "../../landing/landing";
+import Navbar from "../../navbar/navbar";
+import Project from "../../project/project";
+import Skills from "../skills";
 
 const MainPage = () => {
   const aboutRef = useRef<HTMLDivElement>(null);

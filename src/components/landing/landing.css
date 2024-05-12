@@ -45,10 +45,16 @@
 @media screen and (max-width: 480px) {
   .contentInnerWrapper {
     width: 80vw;
-    height: 50vh;
+    height: 70vh;
+  }
+  .mainContentWrapper {
+    padding: 5%;
   }
   .introduction {
     font-size: 0.9rem;
+  }
+  .contentWrapper {
+    padding-left: 5vw;
   }
   .content {
     font-size: 0.7rem;

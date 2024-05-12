@@ -9,7 +9,6 @@ const Landing = () => {
             <div className="mainContentWrapper">
               <div className="contentHeader">
                 <div>MINJOON PARK</div>
-
                 <div>PORTFOLIO</div>
               </div>
               <div className="mainContent">

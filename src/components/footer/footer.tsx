@@ -8,13 +8,14 @@ const Footer = () => {
       style={{
         backgroundColor: "rgb(50,50,50)",
         color: "white",
-        fontSize: "0.85rem",
       }}
     >
       <Marquee autoFill={true} speed={30}>
-        <p style={{ marginRight: "50px" }}>Thank you for watching!</p>
+        <p style={{ marginRight: "50px", fontSize: "1.5rem" }}>
+          Thank you for watching!
+        </p>
       </Marquee>
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center", fontSize: "0.85rem" }}>
         <FontAwesomeIcon icon={faCopyright} /> 2024 Minjoon Park. All rights
         reserved.
       </div>
