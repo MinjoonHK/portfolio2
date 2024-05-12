@@ -4,7 +4,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ refs }: any) => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -25,10 +25,37 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBars as IconProp} />
         </div>
         <ul className="nav-links">
-          <li>About Me</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Archiving</li>
+          <li
+            onClick={() =>
+              refs.aboutRef.current.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            About Me
+          </li>
+          <li>|</li>
+          <li
+            onClick={() =>
+              refs.skillsRef.current.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Skills
+          </li>
+          <li>|</li>
+          <li
+            onClick={() =>
+              refs.projectRef.current.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Projects
+          </li>
+          <li>|</li>
+          <li
+            onClick={() =>
+              refs.archivingRef.current.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            Archiving
+          </li>
         </ul>
       </nav>
     </div>

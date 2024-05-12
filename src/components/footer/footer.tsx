@@ -11,7 +11,7 @@ const Footer = () => {
         fontSize: "0.85rem",
       }}
     >
-      <Marquee autoFill={true} speed={70}>
+      <Marquee autoFill={true} speed={30}>
         <p style={{ marginRight: "50px" }}>Thank you for watching!</p>
       </Marquee>
       <div style={{ textAlign: "center" }}>

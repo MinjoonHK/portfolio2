@@ -4,10 +4,11 @@
   top: 0;
   height: 10vh;
   background-color: transparent;
-  color: rgb(70, 70, 70);
+  color: rgb(240, 240, 240);
 }
 .navbarWrapper.scrolled {
   background-color: white;
+  color: rgb(70, 70, 70);
 }
 .navbarInnerWrppaer {
   width: 100%;

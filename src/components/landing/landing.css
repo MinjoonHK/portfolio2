@@ -1,0 +1,56 @@
+.outerWrapper {
+  height: 100vh;
+  background-image: url("https://i.pinimg.com/originals/3b/ac/62/3bac6200ab85f62ffe75d6ac29d504bf.jpg");
+  background-image: cover;
+  background-position: center;
+}
+
+.contentWrapper {
+  display: flex;
+  padding-left: 14vw;
+  padding-top: 20vh;
+}
+
+.contentInnerWrapper {
+  width: 40%;
+  height: 70vh;
+  background-color: rgb(240, 240, 240);
+  box-shadow: -10px 5px 5px rgb(70, 70, 70);
+  font-weight: bold;
+}
+
+.mainContentWrapper {
+  padding: 13%;
+  font-size: 2.3rem;
+}
+
+.mainContent {
+  padding-top: 10%;
+}
+.introduction {
+  font-size: 1.3rem;
+}
+
+.content {
+  padding-top: 10%;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contentInnerWrapper {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contentInnerWrapper {
+    width: 80vw;
+    height: 50vh;
+  }
+  .introduction {
+    font-size: 0.9rem;
+  }
+  .content {
+    font-size: 0.7rem;
+  }
+}

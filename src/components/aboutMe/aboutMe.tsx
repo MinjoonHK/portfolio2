@@ -1,6 +1,8 @@
-const AboutMe = () => {
+import React from "react";
+
+const AboutMe = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div>
+    <div ref={ref}>
       <h1>About Me</h1>
       <p>
         I am a software engineer with a passion for front-end development. I
@@ -11,6 +13,6 @@ const AboutMe = () => {
       </p>
     </div>
   );
-};
+});
 
 export default AboutMe;
