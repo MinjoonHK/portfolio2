@@ -10,15 +10,17 @@ const Deploy = () => {
       <div className="skillsHeader" style={{ textAlign: "center" }}>
         <h1>Deploy</h1>
       </div>
-      <div className="skillsContent">
-        <div className="skillsItems">
-          <VercelOriginalWordmark size={75} />
-        </div>
-        <div className="skillsItems">
-          <AmazonwebservicesOriginalWordmark size={75} />
-        </div>
-        <div className="skillsItems">
-          <GithubactionsOriginal size={75} />
+      <div className="skillsContentWrapper">
+        <div className="skillsContent">
+          <div className="skillsItems">
+            <VercelOriginalWordmark size={90} />
+          </div>
+          <div className="skillsItems">
+            <AmazonwebservicesOriginalWordmark size={75} />
+          </div>
+          <div className="skillsItems">
+            <GithubactionsOriginal size={75} />
+          </div>
         </div>
       </div>
     </div>

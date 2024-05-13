@@ -1,3 +1,9 @@
+.skillsWrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #5cb083;
+}
+
 .skillsContentContainer {
   display: flex;
   flex-wrap: wrap;
@@ -31,4 +37,41 @@
 /* 10번째 항목부터는 다음 행에서 시작하도록 조정 */
 .skillsItems:nth-child(n + 10) {
   grid-column-start: 2; /* 2번째 열에서 시작 */
+}
+
+@media screen and (max-width: 768px) {
+  .skillsContent {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .skills {
+    width: 43%;
+    padding: 0 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillsContentContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .skillsContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .skills {
+    width: 100%;
+    padding: 0;
+  }
+  .skillsWrapper {
+    height: auto;
+    padding: 5% 0;
+  }
+  .skillsHeader {
+    width: 100%;
+  }
+  .skillsContentWrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
 }

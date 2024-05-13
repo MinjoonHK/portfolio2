@@ -33,15 +33,8 @@ import Collaboration from "./collaboration";
 
 const Skills = React.forwardRef<HTMLDivElement>((props, ref) => {
   return (
-    <div
-      className="skillsWrapper"
-      style={{
-        height: "100vh",
-        backgroundColor: "#5CB083",
-      }}
-      ref={ref}
-    >
-      <div className="skillsHeader" style={{ textAlign: "center" }}>
+    <div className="skillsWrapper" ref={ref}>
+      <div className="skillsHeader">
         <h1>Skills</h1>
       </div>
       <div className="skillsContentContainer">
