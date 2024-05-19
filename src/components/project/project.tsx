@@ -5,6 +5,7 @@ import VxtKorea from "./vxtKorea";
 import ManagementSystem from "./managementSystem";
 import FYP from "./fyp";
 import ResumeEditor from "./resumeEditor";
+import PersonalBlog from "./personalBlog";
 
 const Project = () => {
   return (
@@ -25,11 +26,12 @@ const Project = () => {
         Projects
       </div>
       <div className="projectContentContainer">
-        <ResumeEditor />
+        {/* <ResumeEditor /> */}
         <Algolog />
         <VxtKorea />
         <ManagementSystem />
         <FYP />
+        <PersonalBlog />
       </div>
     </div>
   );

@@ -3,11 +3,10 @@ import Modal from "react-modal";
 import "./project.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import ManagementSystemImg from "./img/managementSystemImg";
+import PersonalBlogImg from "./img/personalBlogImg";
 import { Button } from "antd";
-import { GlobalOutlined } from "@ant-design/icons";
 import { GithubOriginal } from "devicons-react";
-const ManagementSystem = () => {
+const PersonalBlog = () => {
   const [modalOpen, setModalOpen] = useState(false);
   useEffect(() => {
     if (modalOpen) {
@@ -23,9 +22,9 @@ const ManagementSystem = () => {
       <div className="ProjectInnerWrapper">
         <div className="ProjectTitle">
           <div>
-            <h2>Management System</h2>
+            <h2>개인 블로그</h2>
           </div>
-          <div>2023.06 - 2023.08</div>
+          <div>06.2022 - 08.2022</div>
         </div>
         {/* <hr style={{ width: "80%" }} /> */}
         <div className="ProjectContentWrapper">
@@ -38,37 +37,60 @@ const ManagementSystem = () => {
                 className="ProjectContentImage"
               >
                 <div className="ImageBox">
-                  <img src="/img/MS1.png" alt="이미지가 표시되지 않습니다" />
+                  <img src="/img/Blog1.png" alt="이미지가 표시되지 않습니다" />
                 </div>
               </div>
               <div className="ClickImageDescription">
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
+              <div className="projectButton">
+                <a
+                  style={{ textDecoration: "none" }}
+                  href="https://github.com/MinjoonHK/Personal_Blog"
+                >
+                  <Button
+                    style={{
+                      alignItems: "center",
+                      height: "50px",
+                      backgroundColor: "transparent",
+                      fontWeight: "bold",
+                      width: "100%",
+                      display: "flex",
+                      justifyContent: "center",
+                      fontSize: "1rem",
+                    }}
+                  >
+                    <GithubOriginal size={30} style={{ marginRight: "5%" }} />{" "}
+                    GITHUB 에서 확인하기
+                  </Button>
+                </a>
+              </div>
             </div>
             <div className="ProjectSummaryWrapper">
               <div className="ProjectSummaryTitle">PROJECT SUMMARY</div>
               <div className="ProjectSummaryContent">
+                <b>
+                  <p>Django 를 이용해서 만든 블로그 페이지 입니다</p>
+                </b>
                 <p>
-                  <b>Kellon EPC</b> 에서 3개월간의 <b>인턴십</b> 기간동안 참여한
-                  프로젝트입니다.
+                  첫음으로 만들어본 웹 풀스택 개발 프로젝트 입니다 파이썬의
+                  <br />웹 프레임 워크인 <b>Django</b> 를 이용해서 백엔드를
+                  구현하였습니다. <br />
+                  핵심기능으로는 구글 로그인, 댓글, 태그를 이용한 검색이
+                  있습니다. 배포는
+                  <b>AWS Lightsail, Docker, 그리고 github</b> 을 이용하였습니다.
+                  <br />
+                  또한 Certbot 을 이용하여 HTTPS 인증서를 자동으로 갱신하도록
+                  설정 하였습니다.
                 </p>
                 <p>
-                  <b>홍콩에서 30명 규모의 중소기업</b>에서 여름방학 기간동안
-                  풀스택 개발 인턴으로 근무 하였습니다. 작은 규모의 회사였던
-                  만큼 다양한 경험을 쌓을수 있었습니다.
-                </p>
-                <p>
-                  저는 프로젝트 구상단계부터 참여하여
-                  <b>UI 구현, API 및 DB 구축을 담당하였습니다.</b> 첫 실무
-                  경험이었던 만큼 미숙한 부분도 많았지만 여가시간을 활용하여
-                  인터넷 강의와 팀원들의 코드 리뷰를 통해 빠르게 팀에 적응할수
-                  있었습니다. 동료들과 함께 일하며 협업능력을 키울수 있던 뜻깊은
-                  경험이었습니다.
-                </p>
-                <p>
-                  개발을 담당했던 기능으로는 달력을 이용한 일정관리와
-                  파일교환,이메일 발송, 3개국어 번역 그리고 로그인과
-                  회원가입입니다.
+                  이 프로젝트 이전에는 클라우드 라는 단어 조차 생소하였습니다.
+                  <br />
+                  하지만 이 프로젝트를 진행하며 클라우드 라는 기술에 흥미를 갖게
+                  <br />
+                  되었고 더욱 깊은 이해를 위해 <b>AWS</b> 에서 발급하는
+                  <b>Associate</b>
+                  레벨의 자격증 2개를 취득하였습니다.
                 </p>
               </div>
               <div className="ProjectSummaryTitle">PROJECT OVERVIEW</div>
@@ -84,21 +106,15 @@ const ManagementSystem = () => {
                   <tbody style={{ verticalAlign: "top" }}>
                     <tr>
                       <td>프로젝트 유형:</td>
-                      <td>인턴십</td>
+                      <td>개인 프로젝트</td>
                     </tr>
                     <tr>
                       <td>프로젝트 기여도:</td>
-                      <td>UI(100%), API(50%), DB(50%)</td>
+                      <td>100%</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>
-                      <td>
-                        React.js, Express.js, TypeScript, MySQL, Ant Design
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Deploy:</td>
-                      <td>Ubuntu Server</td>
+                      <td>Django, HTML, BootStrap, AWS LightSail</td>
                     </tr>
                   </tbody>
                 </table>
@@ -128,7 +144,7 @@ const ManagementSystem = () => {
             }}
           >
             <Carousel swipeable useKeyboardArrows>
-              {ManagementSystemImg.map((img, idx) => {
+              {PersonalBlogImg.map((img, idx) => {
                 return (
                   <div key={`CarouselImg${idx}`} className="CarouselImageBox">
                     <div className="ImageTitle">{img.imgTitle}</div>
@@ -144,4 +160,4 @@ const ManagementSystem = () => {
   );
 };
 
-export default ManagementSystem;
+export default PersonalBlog;

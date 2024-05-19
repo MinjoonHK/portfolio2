@@ -45,7 +45,7 @@ const VxtKorea = () => {
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
               <div className="projectButton">
-                <a href="http://algorithmlog.com/">
+                <a href="https://vxtkorea.net//">
                   <Button
                     style={{
                       height: "50px",
@@ -86,33 +86,26 @@ const VxtKorea = () => {
             <div className="ProjectSummaryWrapper">
               <div className="ProjectSummaryTitle">PROJECT SUMMARY</div>
               <div className="ProjectSummaryContent">
-                <b>Next.js</b> 와 <b>MongoDB</b> 학습을위해 만든 토이 프로젝트
-                입니다.
                 <p>
-                  <b>Next.js</b> 프레임워크를 사용하여 처음으로
-                  <b>SSR(Server-side Rendering)</b> <br />을 구현해보았습니다.
-                  SSR을 통해 초기 로딩시간을 줄이고 SEO에 유리한
-                  <br /> 페이지를 만들수 있었습니다.
-                </p>
-                <p>
-                  <b>NextAuth</b> 라이브러리를 활용하여 빠르게 원하는 기능을
-                  구현할수 있었습니다.
-                  <br /> 타겟 유저층의 편의를 고려하여 일반 로그인을 비롯하여{" "}
-                  <b>Naver</b>, <b>Github</b>,<br /> 그리고 <b>Google</b> 을
-                  통한 oAuth 로그인을 허용하였습니다.
+                  <b>VXT Korea</b> 의 설립을 희망하는 지인이 있어 도움을 주고자
                   <br />
+                  제작하게 되었습니다.
                 </p>
                 <p>
-                  <b>ChatGPT API</b> 를 통해 문제의 답을 반례와 함께 제공하는
-                  페이지를 구현하였습니다.
+                  회사의 얼굴인 홈페이지인 만큼 디자인과 <b>Framer Motion</b> 을
+                  <br />
+                  활용한 이펙트등 다채로운 홈페이지 제작을 위해 노력하였습니다.
                 </p>
                 <p>
-                  Github Actions를 통해 <b>CI/CD</b> 파이프라인을 구축하여 실제
-                  배포 전에
-                  <br /> <b>Preview Deploy</b>에 먼저 배포하도록 설정하여 배포전
-                  점검후 <b>main</b> 브렌치에
-                  <br /> 머지할때 자동으로 <b>Vercel</b>에 배포되도록
-                  설정하였습니다.
+                  방문자들의 문의를 위해 NodeMailer 를 이용하여 이메일을 통한
+                  문의 수신 기능을 추가하였습니다
+                </p>
+                <p>
+                  효율적인 프로젝트 관리를 위해 <b>AWS S3</b> 와<b>AWS EC2</b>{" "}
+                  를 이용하여 정적페이지와 API를 따로 배포하였습니다. <br />
+                </p>
+                <p>
+                  이후 <b>AWS Cloud Front</b>를 이용하여 https로 전환하였습니다.
                 </p>
               </div>
               <div className="ProjectSummaryTitle">PROJECT OVERVIEW</div>
