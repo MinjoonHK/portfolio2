@@ -1,41 +1,24 @@
 import React from "react";
-import {
-  ReactOriginalWordmark,
-  Html5OriginalWordmark,
-  Css3OriginalWordmark,
-  JavascriptOriginal,
-  TypescriptOriginal,
-  NextjsOriginalWordmark,
-  ReduxOriginal,
-  VercelOriginalWordmark,
-  GithubOriginalWordmark,
-  GithubactionsOriginal,
-  AmazonwebservicesOriginalWordmark,
-  NodejsOriginalWordmark,
-  ExpressOriginalWordmark,
-  JavaOriginalWordmark,
-  SpringOriginalWordmark,
-  MysqlOriginalWordmark,
-  MongodbOriginalWordmark,
-  BootstrapOriginalWordmark,
-  AntdesignOriginalWordmark,
-  NotionOriginal,
-  SlackOriginalWordmark,
-  NextjsOriginal,
-  AntdesignOriginal,
-} from "devicons-react";
-
 import "./skills.css";
 import Frontend from "./frontend";
 import Backend from "./backend";
 import Deploy from "./deploy";
 import Collaboration from "./collaboration";
 
-const Skills = React.forwardRef<HTMLDivElement>((props, ref) => {
+const Skills = () => {
   return (
-    <div className="skillsWrapper" ref={ref}>
-      <div className="skillsHeader">
-        <h1>Skills</h1>
+    <div className="skillsWrapper">
+      <div
+        style={{
+          width: "100%",
+          textAlign: "center",
+          fontSize: "2rem",
+          fontWeight: "bold",
+          textDecoration: "underline",
+          color: "white",
+        }}
+      >
+        Skills
       </div>
       <div className="skillsContentContainer">
         <Frontend />
@@ -45,6 +28,6 @@ const Skills = React.forwardRef<HTMLDivElement>((props, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default Skills;

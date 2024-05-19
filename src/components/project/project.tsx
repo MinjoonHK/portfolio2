@@ -1,17 +1,38 @@
 import React from "react";
 import "./project.css";
+import Algolog from "./algolog";
+import VxtKorea from "./vxtKorea";
+import ManagementSystem from "./managementSystem";
+import FYP from "./fyp";
+import ResumeEditor from "./resumeEditor";
 
-const Project = React.forwardRef<HTMLDivElement>((props, ref) => {
+const Project = () => {
   return (
-    <div ref={ref}>
-      <div className="scroll-container">
-        <div className="scroll-area">1</div>
-        <div className="scroll-area">2</div>
-        <div className="scroll-area">3</div>
-        <div className="scroll-area">4</div>
+    <div
+      className="projectWrapper"
+      style={{ backgroundColor: "rgb(50,50,50)", padding: "1% 0" }}
+    >
+      <div
+        style={{
+          width: "100%",
+          textAlign: "center",
+          fontSize: "2rem",
+          fontWeight: "bold",
+          textDecoration: "underline",
+          color: "white",
+        }}
+      >
+        Projects
+      </div>
+      <div className="projectContentContainer">
+        <ResumeEditor />
+        <Algolog />
+        <VxtKorea />
+        <ManagementSystem />
+        <FYP />
       </div>
     </div>
   );
-});
+};
 
 export default Project;

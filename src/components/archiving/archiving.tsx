@@ -1,13 +1,26 @@
 import React from "react";
 
-const Archiving = React.forwardRef<HTMLDivElement>((props, ref) => {
+const Archiving = () => {
   return (
-    <div ref={ref}>
-      <div className="title" style={{ textAlign: "center" }}>
-        <h1>Archiving</h1>
+    <div
+      className="archivingWrapper"
+      style={{ backgroundColor: "#EDB211", padding: "1% 0" }}
+    >
+      <div
+        className="archivingHeader"
+        style={{
+          width: "100%",
+          textAlign: "center",
+          fontSize: "2rem",
+          fontWeight: "bold",
+          textDecoration: "underline",
+          color: "white",
+        }}
+      >
+        Archiving
       </div>
     </div>
   );
-});
+};
 
 export default Archiving;

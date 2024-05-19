@@ -20,7 +20,7 @@ const Collaobration = () => {
             <NotionOriginal size={75} />
           </div>
           <div className="skillsItems">
-            <SlackOriginalWordmark size={90} />
+            <SlackOriginal size={75} />
           </div>
         </div>
       </div>

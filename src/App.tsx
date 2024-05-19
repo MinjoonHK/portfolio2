@@ -1,4 +1,4 @@
-import MainPage from "./components/skills/view/mainPage";
+import MainPage from "./view/mainPage";
 
 function App() {
   return (

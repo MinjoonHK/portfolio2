@@ -1,0 +1,168 @@
+.ProjectWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2% 0;
+}
+
+.ProjectInnerWrapper {
+  background-color: white;
+  width: 75%;
+  padding: 1%;
+  border-radius: 25px;
+  box-shadow: 0 0 10px 0 rgb(100, 100, 100);
+}
+
+.ProjectTitle {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.ProjectContentWrapper {
+  width: 100%;
+  padding: 1% 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectContentInnerWraper {
+  display: flex;
+}
+
+.ProjectContentLeft {
+  width: 45%;
+}
+
+.ProjectContentImage {
+  background-color: rgb(230, 230, 230);
+  border-radius: 15px;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.ImageBox {
+  width: 100%;
+  height: 250px;
+}
+
+.ImageBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.ClickImageDescription {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.projectButton {
+  margin-top: 3%;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.projectButton a {
+  text-decoration: none;
+}
+
+.ProjectSummaryWrapper {
+  width: 50%;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+.ProjectSummaryTitle {
+  background-color: black;
+  color: white;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.modalInner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalCarouselWrapper {
+  width: 70%;
+  height: 90%;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  background: rgba(38, 38, 38, 0.9) !important;
+}
+
+.ReactModal__Content {
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Content--before-close {
+  opacity: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .modalContent {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .ProjectContentInnerWraper {
+    flex-direction: column;
+  }
+
+  .ProjectContentWrapper {
+    padding: 1% 0;
+  }
+
+  .ProjectContentLeft {
+    width: 100%;
+  }
+
+  .projectButton {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ProjectSummaryWrapper {
+    width: 100%;
+    padding: 0;
+    margin-top: 2%;
+  }
+  .ProjectSummaryTitle {
+    width: 100%;
+  }
+
+  .ProjectInnerWrapper {
+    width: 85%;
+  }
+
+  .modalCarouselWrapper {
+    width: 100%;
+    height: auto;
+  }
+}

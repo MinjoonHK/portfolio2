@@ -8,6 +8,8 @@ import {
   ReactOriginalWordmark,
   ReduxOriginal,
   TypescriptOriginal,
+  ViteOriginal,
+  VitejsOriginal,
 } from "devicons-react";
 
 const Frontend = () => {
@@ -19,32 +21,35 @@ const Frontend = () => {
       <div className="skillsContentWrapper">
         <div className="skillsContent">
           <div className="skillsItems">
-            <Html5OriginalWordmark size={75} />
+            <Html5OriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
-            <Css3OriginalWordmark size={75} />
+            <Css3OriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
-            <JavascriptOriginal size={75} />
+            <JavascriptOriginal size={90} />
           </div>
           <div className="skillsItems">
-            <ReactOriginalWordmark size={75} />
+            <ReactOriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
-            <TypescriptOriginal size={75} />
+            <TypescriptOriginal size={90} />
           </div>
           <div className="skillsItems">
-            <ReduxOriginal size={75} />
+            <ReduxOriginal size={90} />
           </div>
 
           <div className="skillsItems">
             <NextjsOriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
-            <BootstrapOriginalWordmark size={75} />
+            <BootstrapOriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
             <AntdesignOriginalWordmark size={90} />
+          </div>
+          <div className="skillsItems">
+            <VitejsOriginal size={90} />
           </div>
         </div>
       </div>
