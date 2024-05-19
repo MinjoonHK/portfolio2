@@ -25,7 +25,7 @@ const Landing = () => {
                 </div>
                 <div className="content">
                   긍정적인 태도와 끊임없는 자기개발을 바탕으로
-                  <br /> 최고의 사용자 경험을 제공 하겠습니다
+                  <br /> 최고의 사용자 경험을 제공하겠습니다
                 </div>
               </div>
             </div>

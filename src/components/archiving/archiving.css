@@ -1,0 +1,16 @@
+.archivingContent {
+  background-color: white;
+  box-shadow: 0 0 10px #000000;
+  width: 20%;
+  padding: 2%;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+  .archivingContent {
+    width: 90%;
+  }
+}

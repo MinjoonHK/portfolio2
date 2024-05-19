@@ -23,7 +23,7 @@
 .skillsContent {
   display: grid;
   background-color: whitesmoke;
-  box-shadow: -10px 5px 5px rgb(50, 50, 50);
+  box-shadow: 0 0 10px rgb(50, 50, 50);
   border-radius: 10px;
   padding: 5%;
   grid-template-columns: repeat(5, 1fr);

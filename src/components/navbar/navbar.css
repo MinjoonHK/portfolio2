@@ -5,6 +5,7 @@
   height: 10vh;
   background-color: transparent;
   color: rgb(240, 240, 240);
+  z-index: 100;
 }
 .navbarWrapper.scrolled {
   background-color: white;

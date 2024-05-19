@@ -89,8 +89,10 @@ const Algolog = () => {
             <div className="ProjectSummaryWrapper">
               <div className="ProjectSummaryTitle">PROJECT SUMMARY</div>
               <div className="ProjectSummaryContent">
-                <b>Next.js</b> 와 <b>MongoDB</b> 학습을위해 만든 토이 프로젝트
-                입니다.
+                <p>
+                  <b>Next.js</b> 와 <b>MongoDB</b> 학습을위해 만든 토이 프로젝트
+                  입니다.
+                </p>
                 <p>
                   <b>Next.js</b> 프레임워크를 사용하여 처음으로
                   <b>SSR(Server-side Rendering)</b> <br />을 구현해보았습니다.
@@ -143,6 +145,10 @@ const Algolog = () => {
                         React.js, Next.js, Redux Toolkit, TypeScript, MongoDB,
                         Antd
                       </td>
+                    </tr>
+                    <tr>
+                      <td>CI/CD:</td>
+                      <td>Github Action</td>
                     </tr>
                     <tr>
                       <td>Deploy:</td>
