@@ -98,6 +98,12 @@
   height: 90%;
 }
 
+.ImageTitle {
+  text-align: center;
+  background-color: white;
+  font-weight: bold;
+}
+
 .ReactModal__Overlay {
   opacity: 0;
   transition: all 500ms ease-in-out;
@@ -162,7 +168,10 @@
   }
 
   .modalCarouselWrapper {
-    width: 100%;
-    height: auto;
+    width: 135%;
+    height: 47%;
+  }
+  .ImageBox {
+    height: 150px;
   }
 }

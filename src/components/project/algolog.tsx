@@ -12,8 +12,10 @@ const Algolog = () => {
   useEffect(() => {
     if (modalOpen) {
       document.querySelector(".modal-content")?.classList.add("open");
+      document.body.style.overflow = "hidden";
     } else {
       document.querySelector(".modal-content")?.classList.remove("open");
+      document.body.style.overflow = "auto";
     }
   }, [modalOpen]);
   return (
@@ -177,15 +179,7 @@ const Algolog = () => {
               {AlgologImg.map((img, idx) => {
                 return (
                   <div key={`CarouselImg${idx}`} className="CarouselImageBox">
-                    <div
-                      style={{
-                        textAlign: "center",
-                        backgroundColor: "white",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {img.imgTitle}
-                    </div>
+                    <div className="ImageTitle">{img.imgTitle}</div>
                     <img src={img.imgSrc} alt="이미지를 표시할수 없습니다!" />
                   </div>
                 );
