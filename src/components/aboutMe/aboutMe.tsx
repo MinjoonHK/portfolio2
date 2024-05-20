@@ -143,7 +143,7 @@ const AboutMe = () => {
                 <td>010-2048-0868</td>
               </tr>
               <tr>
-                <td>이메일</td>
+                <td>이메일:</td>
                 <td>minjoon.park.hk@gmail.com</td>
               </tr>
             </table>
