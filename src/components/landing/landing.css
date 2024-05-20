@@ -45,7 +45,7 @@
 @media screen and (max-width: 480px) {
   .contentInnerWrapper {
     width: 80vw;
-    height: 50vh;
+    height: 60vh;
   }
   .mainContentWrapper {
     padding: 5%;
