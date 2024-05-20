@@ -96,15 +96,14 @@ const Algolog = () => {
                 <p>
                   <b>Next.js</b> 프레임워크를 사용하여 처음으로
                   <b>SSR(Server-side Rendering)</b> <br />을 구현해보았습니다.
-                  SSR을 통해 초기 로딩시간을 줄이고 SEO에 유리한
-                  <br /> 페이지를 만들수 있었습니다.
+                  SSR을 통해 초기 로딩시간을 줄이고 SEO에 유리한 페이지를 만들수
+                  있었습니다.
                 </p>
                 <p>
                   <b>NextAuth</b> 라이브러리를 활용하여 빠르게 원하는 기능을
-                  구현할수 있었습니다.
-                  <br /> 타겟 유저층의 편의를 고려하여 일반 로그인을 비롯하여{" "}
-                  <b>Naver</b>, <b>Github</b>,<br /> 그리고 <b>Google</b> 을
-                  통한 oAuth 로그인을 허용하였습니다.
+                  구현할수 있었습니다. 타겟 유저층의 편의를 고려하여 일반
+                  로그인을 비롯하여 <b>Naver</b>, <b>Github</b>,그리고{" "}
+                  <b>Google</b> 을 통한 oAuth 로그인을 허용하였습니다.
                   <br />
                 </p>
                 <p>
@@ -114,10 +113,9 @@ const Algolog = () => {
                 <p>
                   Github Actions를 통해 <b>CI/CD</b> 파이프라인을 구축하여 실제
                   배포 전에
-                  <br /> <b>Preview Deploy</b>에 먼저 배포하도록 설정하여 배포전
-                  점검후 <b>main</b> 브렌치에
-                  <br /> 머지할때 자동으로 <b>Vercel</b>에 배포되도록
-                  설정하였습니다.
+                  <b>Preview Deploy</b>에 먼저 배포하도록 설정하여 배포전 점검후{" "}
+                  <b>main</b> 브렌치에 머지할때 자동으로 <b>Vercel</b>에
+                  배포되도록 설정하였습니다.
                 </p>
               </div>
               <div className="ProjectSummaryTitle">PROJECT OVERVIEW</div>

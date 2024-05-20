@@ -50,10 +50,10 @@ const Archiving = () => {
                 justifyContent: "center",
               }}
             >
-              <ul style={{ fontWeight: "bold" }}>
+              <ul className="archivingList" style={{ fontWeight: "bold" }}>
                 <li>공부한 것들을 기록하고 있습니다</li>
                 <li>과거 프로젝트 코드를 관리하고 있습니다</li>
-                <li>프로젝트를 이해하기 쉽게 문서화 합니다</li>
+                <li>프로젝트를 이해하기 쉽게 문서화 합니다 </li>
               </ul>
             </div>
           </div>
