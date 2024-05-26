@@ -15,6 +15,7 @@
 
 <ul>
   <li>React.js@18.2.0, TypeScript</li>
+  <li>Build: vite</li>
   <li>IDE : VScode</li>
   <li>Deploy: Vercel</li>
 </ul>
