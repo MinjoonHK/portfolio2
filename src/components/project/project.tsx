@@ -6,6 +6,7 @@ import ManagementSystem from "./managementSystem";
 import FYP from "./fyp";
 import ResumeEditor from "./resumeEditor";
 import PersonalBlog from "./personalBlog";
+import Portfolio from "./portfolio";
 
 const Project = () => {
   return (
@@ -27,6 +28,7 @@ const Project = () => {
       </div>
       <div className="projectContentContainer">
         {/* <ResumeEditor /> */}
+        <Portfolio />
         <Algolog />
         <VxtKorea />
         <ManagementSystem />
