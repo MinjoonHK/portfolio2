@@ -23,7 +23,7 @@ const ResumeEditor = () => {
       <div className="ProjectInnerWrapper">
         <div className="ProjectTitle">
           <div>
-            <h2>ResumeEditor</h2>
+            <h2>Reditor</h2>
           </div>
           <div>2024.04 - 2024.05</div>
         </div>
@@ -39,7 +39,7 @@ const ResumeEditor = () => {
               >
                 <div className="ImageBox">
                   <img
-                    src="/img/algolog_logindark.png"
+                    src="/img/reditor_landing.png"
                     alt="이미지가 표시되지 않습니다"
                   />
                 </div>
@@ -48,7 +48,7 @@ const ResumeEditor = () => {
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
               <div className="projectButton">
-                <a href="http://algorithmlog.com/">
+                <a href="https://reditor.me/">
                   <Button
                     style={{
                       height: "50px",
@@ -66,7 +66,7 @@ const ResumeEditor = () => {
                 </a>
                 <a
                   style={{ textDecoration: "none" }}
-                  href="https://github.com/MinjoonHK/vxt"
+                  href="https://github.com/MinjoonHK/resumeEditorFrontend"
                 >
                   <Button
                     style={{
@@ -89,33 +89,25 @@ const ResumeEditor = () => {
             <div className="ProjectSummaryWrapper">
               <div className="ProjectSummaryTitle">PROJECT SUMMARY</div>
               <div className="ProjectSummaryContent">
-                <b>Next.js</b> 와 <b>MongoDB</b> 학습을위해 만든 토이 프로젝트
+                부트캠프 최종 프로젝트인 자소서 첨삭 사이트 <b>Reditor</b>{" "}
                 입니다.
                 <p>
-                  <b>Next.js</b> 프레임워크를 사용하여 처음으로
-                  <b>SSR(Server-side Rendering)</b> <br />을 구현해보았습니다.
-                  SSR을 통해 초기 로딩시간을 줄이고 SEO에 유리한
-                  <br /> 페이지를 만들수 있었습니다.
+                  기존의 자소서 첨삭 사이트들이 부족하다고 생각하여 이를 개선해
+                  보고자 해당 프로젝트를 기획하게 되었습니다.
                 </p>
                 <p>
-                  <b>NextAuth</b> 라이브러리를 활용하여 빠르게 원하는 기능을
-                  구현할수 있었습니다.
-                  <br /> 타겟 유저층의 편의를 고려하여 일반 로그인을 비롯하여{" "}
-                  <b>Naver</b>, <b>Github</b>,<br /> 그리고 <b>Google</b> 을
-                  통한 oAuth 로그인을 허용하였습니다.
-                  <br />
+                  저는 5인으로 이루어진 팀에 팀원으로 참여하여 프론트엔드 95%
+                  백엔드 10%를 담당하였습니다
                 </p>
                 <p>
-                  <b>ChatGPT API</b> 를 통해 문제의 답을 반례와 함께 제공하는
-                  페이지를 구현하였습니다.
+                  <b>Lazy loading, Suspense</b>를 활용하여 <b>Code Splitting</b>
+                  을 통해 로딩속도를 개선하였고 RCA로 만든 프로젝트를
+                  <b> Vite.js</b> 로 변경하며 빌드 속도를 개선하였습니다
                 </p>
                 <p>
-                  Github Actions를 통해 <b>CI/CD</b> 파이프라인을 구축하여 실제
-                  배포 전에
-                  <br /> <b>Preview Deploy</b>에 먼저 배포하도록 설정하여 배포전
-                  점검후 <b>main</b> 브렌치에
-                  <br /> 머지할때 자동으로 <b>Vercel</b>에 배포되도록
-                  설정하였습니다.
+                  <b>Github Action</b>을 통한 CI/CD 파이프라인 구축과 원활한
+                  협업을 위해 Main Branch에 Merge가 발생했을때 Slack을 통한 알림
+                  기능을 추가하였습니다
                 </p>
               </div>
               <div className="ProjectSummaryTitle">PROJECT OVERVIEW</div>
@@ -131,18 +123,22 @@ const ResumeEditor = () => {
                   <tbody style={{ verticalAlign: "top" }}>
                     <tr>
                       <td>프로젝트 유형:</td>
-                      <td>개인 프로젝트</td>
+                      <td>5인 팀프로젝트</td>
                     </tr>
                     <tr>
                       <td>프로젝트 기여도:</td>
-                      <td>100%</td>
+                      <td>프론트엔드: 95% 백엔드: 10%</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>
                       <td>
-                        React.js, Next.js, Redux Toolkit, TypeScript, MongoDB,
-                        Antd
+                        React.js, TypeScript, Redux Toolkit,
+                        <br /> Spring Boot, MySQL, Antd
                       </td>
+                    </tr>
+                    <tr>
+                      <td>Build:</td>
+                      <td>Gradle, Vite.js</td>
                     </tr>
                     <tr>
                       <td>CI/CD:</td>
@@ -150,7 +146,7 @@ const ResumeEditor = () => {
                     </tr>
                     <tr>
                       <td>Deploy:</td>
-                      <td>Vercel</td>
+                      <td>Vercel, CloudType</td>
                     </tr>
                   </tbody>
                 </table>

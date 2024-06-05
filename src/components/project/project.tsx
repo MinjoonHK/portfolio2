@@ -27,7 +27,7 @@ const Project = () => {
         Projects
       </div>
       <div className="projectContentContainer">
-        {/* <ResumeEditor /> */}
+        <ResumeEditor />
         <Portfolio />
         <Algolog />
         <VxtKorea />
