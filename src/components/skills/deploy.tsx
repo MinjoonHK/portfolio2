@@ -2,6 +2,7 @@ import {
   VercelOriginalWordmark,
   GithubactionsOriginal,
   AmazonwebservicesOriginalWordmark,
+  JenkinsOriginal,
 } from "devicons-react";
 
 const Deploy = () => {
@@ -13,13 +14,13 @@ const Deploy = () => {
       <div className="skillsContentWrapper">
         <div className="skillsContent">
           <div className="skillsItems">
-            <VercelOriginalWordmark size={90} />
+            <JenkinsOriginal size={90} />
           </div>
           <div className="skillsItems">
-            <AmazonwebservicesOriginalWordmark size={75} />
+            <AmazonwebservicesOriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
-            <GithubactionsOriginal size={75} />
+            <GithubactionsOriginal size={90} />
           </div>
         </div>
       </div>

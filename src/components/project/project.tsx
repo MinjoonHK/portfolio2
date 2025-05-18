@@ -7,6 +7,7 @@ import FYP from "./fyp";
 import ResumeEditor from "./resumeEditor";
 import PersonalBlog from "./personalBlog";
 import Portfolio from "./portfolio";
+import Dangchan from "./dangchan";
 
 const Project = () => {
   return (
@@ -27,6 +28,7 @@ const Project = () => {
         Projects
       </div>
       <div className="projectContentContainer">
+        <Dangchan/>
         <ResumeEditor />
         <Portfolio />
         <Algolog />

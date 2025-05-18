@@ -1,14 +1,12 @@
 import {
-  AntdesignOriginalWordmark,
   BootstrapOriginalWordmark,
   Css3OriginalWordmark,
   Html5OriginalWordmark,
   JavascriptOriginal,
   NextjsOriginalWordmark,
   ReactOriginalWordmark,
-  ReduxOriginal,
+  MaterialuiOriginal,
   TypescriptOriginal,
-  ViteOriginal,
   VitejsOriginal,
 } from "devicons-react";
 
@@ -36,7 +34,11 @@ const Frontend = () => {
             <TypescriptOriginal size={90} />
           </div>
           <div className="skillsItems">
-            <ReduxOriginal size={90} />
+            <img
+              src="/img/react_query.png"
+              alt="image not found"
+              style={{ width: "90px", height: "90px" }}
+            />
           </div>
 
           <div className="skillsItems">
@@ -46,7 +48,7 @@ const Frontend = () => {
             <BootstrapOriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
-            <AntdesignOriginalWordmark size={90} />
+            <MaterialuiOriginal size={90} />
           </div>
           <div className="skillsItems">
             <VitejsOriginal size={90} />

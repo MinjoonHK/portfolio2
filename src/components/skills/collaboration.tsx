@@ -1,4 +1,5 @@
 import {
+  FigmaOriginal,
   GithubOriginalWordmark,
   NotionOriginal,
   SlackOriginal,
@@ -14,13 +15,16 @@ const Collaobration = () => {
       <div className="skillsContentWrapper">
         <div className="skillsContent">
           <div className="skillsItems">
-            <GithubOriginalWordmark size={75} />
+            <FigmaOriginal size={90} />
           </div>
           <div className="skillsItems">
-            <NotionOriginal size={75} />
+            <GithubOriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
-            <SlackOriginal size={75} />
+            <NotionOriginal size={90} />
+          </div>
+          <div className="skillsItems">
+            <SlackOriginal size={90} />
           </div>
         </div>
       </div>

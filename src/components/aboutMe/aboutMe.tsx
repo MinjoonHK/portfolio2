@@ -41,8 +41,8 @@ const AboutMe = () => {
             <div className="aboutContentHeader">PROFILE</div>
             <table style={{ width: "100%" }}>
               <colgroup>
-                <col style={{ width: "30%" }} />
-                <col style={{ width: "70%" }} />
+                <col style={{ width: "25%" }} />
+                <col style={{ width: "65%" }} />
               </colgroup>
               <tbody>
                 <tr>
@@ -69,23 +69,29 @@ const AboutMe = () => {
               </colgroup>
               <tbody>
                 <tr>
-                  <td>2017.09 - 2023.08</td>
-                  <td>홍콩이공대학교(전기공학)</td>
-                </tr>
-                <tr>
                   <td>2024.01 - 2024.05</td>
                   <td>멀티캠퍼스(JAVA 21회차)</td>
+                </tr>
+                <tr>
+                  <td>2017.09 - 2023.08</td>
+                  <td>홍콩이공대학교(전기공학)</td>
                 </tr>
               </tbody>
             </table>
           </div>
           <div className="aboutContentItems">
-            <div className="aboutContentHeader">EXPERIENCE</div>
+            <div className="aboutContentHeader">CAREER</div>
             <table style={{ width: "100%" }}>
               <colgroup>
                 <col style={{ width: "40%" }} />
                 <col style={{ width: "60%" }} />
               </colgroup>
+              <tbody>
+                <tr>
+                  <td>2024.08-Present</td>
+                  <td>미래에셋자산운용</td>
+                </tr>
+              </tbody>
               <tbody>
                 <tr>
                   <td>2023.06-2023.08</td>
@@ -127,16 +133,16 @@ const AboutMe = () => {
               </colgroup>
               <tbody>
                 <tr>
-                  <td>2021.08.06</td>
-                  <td>컴퓨터활용능력 1급</td>
+                  <td>2023.01.06</td>
+                  <td>AWS SA Associate</td>
                 </tr>
                 <tr>
                   <td>2022.12.21</td>
                   <td>AWS Developer Associate</td>
                 </tr>
                 <tr>
-                  <td>2023.01.06</td>
-                  <td>AWS SA Associate</td>
+                  <td>2021.08.06</td>
+                  <td>컴퓨터활용능력 1급</td>
                 </tr>
               </tbody>
             </table>
@@ -145,8 +151,8 @@ const AboutMe = () => {
             <div className="aboutContentHeader">CONTACT</div>
             <table style={{ width: "100%" }}>
               <colgroup>
-                <col style={{ width: "30%" }} />
-                <col style={{ width: "70%" }} />
+                <col style={{ width: "20%" }} />
+                <col style={{ width: "80%" }} />
               </colgroup>
               <tbody>
                 <tr>

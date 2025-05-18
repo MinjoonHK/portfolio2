@@ -39,7 +39,7 @@ const ResumeEditor = () => {
               >
                 <div className="ImageBox">
                   <img
-                    src="/img/reditor_landing.png"
+                    src="/img/reditor1.png"
                     alt="이미지가 표시되지 않습니다"
                   />
                 </div>
