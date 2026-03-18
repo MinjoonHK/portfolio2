@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from "./App.tsx";
 import Modal from "react-modal";
 

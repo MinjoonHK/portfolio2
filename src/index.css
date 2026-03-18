@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    -webkit-scrollbar: none;
+    scrollbar-width: none;
+  }
+}

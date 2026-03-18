@@ -13,8 +13,8 @@ const MainPage = () => {
   const projectRef = useRef<HTMLDivElement>(null);
   const archivingRef = useRef<HTMLDivElement>(null);
   return (
-    <div style={{ height: "80vh" }}>
-      <Navbar refs={{ aboutRef, skillsRef, projectRef, archivingRef }} />
+    <div>
+      {/* <Navbar refs={{ aboutRef, skillsRef, projectRef, archivingRef }} /> */}
       <Landing />
       <section ref={aboutRef} style={{ scrollMarginTop: "10vh" }}>
         <AboutMe />
