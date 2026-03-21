@@ -6,6 +6,7 @@ import Landing from "../components/landing/landing";
 import Navbar from "../components/navbar/navbar";
 import Project from "../components/project/project";
 import Skills from "../components/skills/skills";
+import StarsBackground from "../components/canvas/StarsBackground";
 
 const MainPage = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -13,7 +14,9 @@ const MainPage = () => {
   const projectRef = useRef<HTMLDivElement>(null);
   const archivingRef = useRef<HTMLDivElement>(null);
   return (
-    <div>
+    <div className="relative">
+      <StarsBackground />
+      <div className="relative z-10">
       {/* <Navbar refs={{ aboutRef, skillsRef, projectRef, archivingRef }} /> */}
       <Landing />
       <section ref={aboutRef} style={{ scrollMarginTop: "10vh" }}>
@@ -29,6 +32,7 @@ const MainPage = () => {
         <Archiving />
       </section>
       <Footer />
+      </div>
     </div>
   );
 };

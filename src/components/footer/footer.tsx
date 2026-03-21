@@ -6,15 +6,11 @@ const Footer = () => {
   return (
     <footer
       style={{
-        backgroundColor: "rgb(50,50,50)",
+        background:
+          "linear-gradient(to bottom, rgba(8,12,30,0) 0%, rgba(8,12,30,0.3) 60px, rgba(8,12,30,0.6) 100%)",
         color: "white",
       }}
     >
-      <Marquee autoFill={true} speed={30}>
-        <p style={{ marginRight: "50px", fontSize: "1.5rem" }}>
-          Thank you for watching!
-        </p>
-      </Marquee>
       <div style={{ textAlign: "center", fontSize: "0.85rem" }}>
         <FontAwesomeIcon icon={faCopyright} /> 2024 Minjoon Park. All rights
         reserved.

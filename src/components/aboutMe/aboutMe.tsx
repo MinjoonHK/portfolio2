@@ -5,7 +5,11 @@ const AboutMe = () => {
   return (
     <div
       className="aboutMeWrapper"
-      style={{ backgroundColor: "rgb(235,235,235)", padding: "1% 0" }}
+      style={{
+          background: "linear-gradient(to bottom, rgba(8,12,30,0) 0%, rgba(8,12,30,0.15) 60px, rgba(8,12,30,0.45) 140px, rgba(8,12,30,0.55) 100%)",
+          padding: "1% 0",
+          color: "rgba(240, 245, 255, 0.95)"
+        }}
     >
       <div
         className="aboutMeHeader"
@@ -15,7 +19,7 @@ const AboutMe = () => {
           fontSize: "2rem",
           fontWeight: "bold",
           textDecoration: "underline",
-          color: "black",
+          color: "white",
         }}
       >
         About Me

@@ -13,7 +13,10 @@ const Project = () => {
   return (
     <div
       className="projectWrapper"
-      style={{ backgroundColor: "rgb(50,50,50)", padding: "1% 0" }}
+      style={{
+          background: "linear-gradient(to bottom, rgba(8,12,30,0) 0%, rgba(8,12,30,0.2) 80px, rgba(8,12,30,0.55) 100%)",
+          padding: "1% 0"
+        }}
     >
       <div
         style={{

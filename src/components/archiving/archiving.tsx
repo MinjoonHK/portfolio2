@@ -6,7 +6,10 @@ const Archiving = () => {
   return (
     <div
       className="archivingWrapper"
-      style={{ backgroundColor: "#EDB211", padding: "1% 0" }}
+      style={{
+          background: "linear-gradient(to bottom, rgba(8,12,30,0) 0%, rgba(8,12,30,0.2) 80px, rgba(8,12,30,0.55) 100%)",
+          padding: "1% 0"
+        }}
     >
       <div
         className="archivingHeader"
@@ -38,7 +41,7 @@ const Archiving = () => {
             <div style={{ width: "100%", textAlign: "center" }}>
               <a
                 href="https://github.com/MinjoonHK"
-                style={{ color: "black", textAlign: "center", width: "100%" }}
+                style={{ color: "rgba(180, 200, 255, 0.95)", textAlign: "center", width: "100%" }}
               >
                 GITHUB 방문하기
               </a>
