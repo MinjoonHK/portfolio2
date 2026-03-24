@@ -1,7 +1,6 @@
 import {
   BootstrapOriginalWordmark,
   Css3OriginalWordmark,
-  Html5OriginalWordmark,
   JavascriptOriginal,
   NextjsOriginalWordmark,
   ReactOriginalWordmark,
@@ -9,6 +8,7 @@ import {
   TypescriptOriginal,
   VitejsOriginal,
 } from "devicons-react";
+import HtmlPlanet from "../canvas/HtmlPlanet";
 
 const Frontend = () => {
   return (
@@ -19,7 +19,7 @@ const Frontend = () => {
       <div className="skillsContentWrapper">
         <div className="skillsContent">
           <div className="skillsItems">
-            <Html5OriginalWordmark size={90} />
+            <HtmlPlanet />
           </div>
           <div className="skillsItems">
             <Css3OriginalWordmark size={90} />
