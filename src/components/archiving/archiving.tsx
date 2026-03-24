@@ -35,7 +35,7 @@ const Archiving = () => {
           }}
         >
           <div className="archivingContent">
-            <div className="archivingIcon" style={{ textAlign: "center" }}>
+            <div className="archivingIcon" style={{ textAlign: "center", display: "flex", justifyContent: "center", width: "100%" }}>
               <GithubOriginalWordmark size={100} />
             </div>
             <div style={{ width: "100%", textAlign: "center" }}>
