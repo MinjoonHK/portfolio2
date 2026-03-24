@@ -18,31 +18,28 @@ const AboutMe = () => {
           textAlign: "center",
           fontSize: "2rem",
           fontWeight: "bold",
-          textDecoration: "underline",
-          color: "white",
+          letterSpacing: "4px",
+          color: "#cce4ff",
+          textShadow: "0 0 10px #7eb8ff, 0 0 24px #4a90d9, 0 0 40px rgba(74,144,217,0.4)",
         }}
       >
-        About Me
+        ABOUT ME
       </div>
       <div
         className="aboutMeContentWrapper"
         style={{
           display: "flex",
+          justifyContent: "center",
           paddingTop: "5%",
           paddingBottom: "5%",
           paddingLeft: "5%",
+          paddingRight: "5%",
         }}
       >
-        <div className="aboutMePhoto">
-          <img
-            style={{ height: "250px" }}
-            src="img/personalPhoto.jpg"
-            alt="사진을 찾을수 없습니다!"
-          />
-        </div>
         <div className="aboutMeContentGrid">
           <div className="aboutContentItems">
             <div className="aboutContentHeader">PROFILE</div>
+
             <table style={{ width: "100%" }}>
               <colgroup>
                 <col style={{ width: "25%" }} />

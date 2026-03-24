@@ -1,20 +1,46 @@
 .aboutContentHeader {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
+  letter-spacing: 2px;
+  color: #7eb8ff;
+  text-shadow: 0 0 6px rgba(126, 184, 255, 0.6);
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(100, 160, 255, 0.25);
 }
 
 .aboutContent ul {
   list-style-type: none;
 }
 
+.aboutContentItems {
+  border: 1px solid rgba(100, 160, 255, 0.25);
+  box-shadow: 0 0 10px rgba(100, 160, 255, 0.15), inset 0 0 20px rgba(100, 160, 255, 0.03);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  padding: 16px;
+  backdrop-filter: blur(4px);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.aboutContentItems:hover {
+  box-shadow: 0 0 18px rgba(100, 160, 255, 0.3), inset 0 0 20px rgba(100, 160, 255, 0.06);
+  border-color: rgba(100, 160, 255, 0.45);
+}
+
+.aboutContentItems table td {
+  padding: 2px 4px;
+  font-size: 0.85rem;
+  color: rgba(220, 235, 255, 0.85);
+  line-height: 1.6;
+}
+
 .aboutMeContentGrid {
   width: 100%;
-  margin-left: 5%;
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
-
 
 @media screen and (max-width: 480px) {
   .aboutMeContentWrapper {
@@ -25,6 +51,7 @@
     grid-template-columns: repeat(1, 1fr);
     margin-left: 0;
   }
+
   .aboutMePhoto {
     display: flex;
     justify-content: center;
