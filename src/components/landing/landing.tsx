@@ -31,15 +31,15 @@ const Landing = () => {
 
   return (
     <section
-      className="relative w-full h-screen min-h-[600px] overflow-hidden flex items-center justify-center font-sans px-6 md:px-12"
+      className="relative w-full h-screen min-h-[600px] overflow-hidden flex items-center justify-center font-sans px-[5%] md:px-[7%]"
       style={{
         background:
           "linear-gradient(to bottom, transparent 60%, rgba(8,12,30,0.08) 85%, rgba(8,12,30,0.2) 100%)",
       }}
     >
-      <div className="relative z-10 w-full max-w-6xl flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
+      <div className="relative z-10 w-full flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
         {/* 좌측: 텍스트 영역 */}
-        <div className="relative text-left md:text-left text-white pointer-events-none flex-1 md:flex-none md:ml-8">
+        <div className="relative text-left text-white pointer-events-none shrink-0">
           <p className="text-base font-light text-white/55 tracking-[0.06em] mb-2.5 animate-[fadeUp_1s_0.2s_both]">
             안녕하세요
           </p>
@@ -74,7 +74,7 @@ const Landing = () => {
         </div>
 
         {/* 우측: Earth 3D 캔버스 */}
-        <div className="relative w-full md:w-[45%] h-[280px] md:h-[85vh] min-h-[250px] flex items-center justify-center pointer-events-auto">
+        <div className="relative w-[280px] h-[280px] md:w-[45%] md:h-auto md:aspect-square md:ml-[5%] flex items-center justify-center pointer-events-auto">
           <EarthCanvas />
         </div>
       </div>
