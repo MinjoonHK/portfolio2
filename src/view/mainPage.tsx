@@ -7,6 +7,7 @@ import Navbar from "../components/navbar/navbar";
 import Project from "../components/project/project";
 import Skills from "../components/skills/skills";
 import StarsBackground from "../components/canvas/StarsBackground";
+import RocketScrollButton from "../components/rocketButton/RocketScrollButton";
 
 const MainPage = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -19,20 +20,21 @@ const MainPage = () => {
       <div className="relative z-10">
       {/* <Navbar refs={{ aboutRef, skillsRef, projectRef, archivingRef }} /> */}
       <Landing />
-      <section ref={aboutRef} style={{ scrollMarginTop: "10vh" }}>
+      <section id="about" ref={aboutRef} style={{ scrollMarginTop: "10vh" }}>
         <AboutMe />
       </section>
-      <section ref={skillsRef} style={{ scrollMarginTop: "10vh" }}>
+      <section id="skills" ref={skillsRef} style={{ scrollMarginTop: "10vh" }}>
         <Skills />
       </section>
-      <section ref={projectRef} style={{ scrollMarginTop: "10vh" }}>
+      <section id="projects" ref={projectRef} style={{ scrollMarginTop: "10vh" }}>
         <Project />
       </section>
-      <section ref={archivingRef} style={{ scrollMarginTop: "10vh" }}>
+      <section id="archiving" ref={archivingRef} style={{ scrollMarginTop: "10vh" }}>
         <Archiving />
       </section>
       <Footer />
       </div>
+      <RocketScrollButton />
     </div>
   );
 };
