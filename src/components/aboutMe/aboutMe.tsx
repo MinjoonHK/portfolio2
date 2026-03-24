@@ -6,10 +6,11 @@ const AboutMe = () => {
     <div
       className="aboutMeWrapper"
       style={{
-          background: "linear-gradient(to bottom, rgba(8,12,30,0) 0%, rgba(8,12,30,0.15) 60px, rgba(8,12,30,0.45) 140px, rgba(8,12,30,0.55) 100%)",
-          padding: "1% 0",
-          color: "rgba(240, 245, 255, 0.95)"
-        }}
+        background:
+          "linear-gradient(to bottom, rgba(8,12,30,0) 0%, rgba(8,12,30,0.15) 60px, rgba(8,12,30,0.45) 140px, rgba(8,12,30,0.55) 100%)",
+        padding: "1% 0",
+        color: "rgba(240, 245, 255, 0.95)",
+      }}
     >
       <div
         className="aboutMeHeader"
@@ -20,7 +21,8 @@ const AboutMe = () => {
           fontWeight: "bold",
           letterSpacing: "4px",
           color: "#cce4ff",
-          textShadow: "0 0 10px #7eb8ff, 0 0 24px #4a90d9, 0 0 40px rgba(74,144,217,0.4)",
+          textShadow:
+            "0 0 10px #7eb8ff, 0 0 24px #4a90d9, 0 0 40px rgba(74,144,217,0.4)",
         }}
       >
         ABOUT ME
@@ -62,7 +64,7 @@ const AboutMe = () => {
             </table>
           </div>
           <div className="aboutContentItems">
-            <div className="aboutContentHeader">EDUCATION</div>
+            <div className="aboutContentHeader">ORGANIZATION</div>
             <table style={{ width: "100%" }}>
               <colgroup>
                 <col style={{ width: "40%" }} />
@@ -70,8 +72,12 @@ const AboutMe = () => {
               </colgroup>
               <tbody>
                 <tr>
+                  <td>2025.11 - 2026.03</td>
+                  <td>개발동아리 CMC (Frontend)</td>
+                </tr>
+                <tr>
                   <td>2024.01 - 2024.05</td>
-                  <td>멀티캠퍼스(JAVA 21회차)</td>
+                  <td>멀티캠퍼스 JAVA 21회차</td>
                 </tr>
                 <tr>
                   <td>2017.09 - 2023.08</td>
@@ -133,6 +139,10 @@ const AboutMe = () => {
                 <col style={{ width: "70%" }} />
               </colgroup>
               <tbody>
+                <tr>
+                  <td>2025.06.07</td>
+                  <td>SQL 개발자(SQLD)</td>
+                </tr>
                 <tr>
                   <td>2023.01.06</td>
                   <td>AWS SA Associate</td>
