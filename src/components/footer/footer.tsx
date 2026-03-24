@@ -12,7 +12,7 @@ const Footer = () => {
       }}
     >
       <div style={{ textAlign: "center", fontSize: "0.85rem" }}>
-        <FontAwesomeIcon icon={faCopyright} /> 2024 Minjoon Park. All rights
+        <FontAwesomeIcon icon={faCopyright} /> 2026 Minjoon Park. All rights
         reserved.
       </div>
     </footer>
