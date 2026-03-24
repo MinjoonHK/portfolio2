@@ -1,24 +1,13 @@
-import { useEffect, useState } from "react";
-import Modal from "react-modal";
+import { useState } from "react";
 import "./project.css";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import ResumeEditorImg from "./img/resumeEditorImg";
 import { Button } from "antd";
 import { GlobalOutlined } from "@ant-design/icons";
-import { GithubOriginal } from "devicons-react";
 import DangchanImg from "./img/dangchanImg";
+import ProjectImageModal from "./ProjectImageModal";
+import ProjectGithubLinkButton from "./ProjectGithubLinkButton";
+
 const Dangchan = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  useEffect(() => {
-    if (modalOpen) {
-      document.querySelector(".modal-content")?.classList.add("open");
-      document.body.style.overflow = "hidden";
-    } else {
-      document.querySelector(".modal-content")?.classList.remove("open");
-      document.body.style.overflow = "auto";
-    }
-  }, [modalOpen]);
   return (
     <div className="ProjectWrapper">
       <div className="ProjectInnerWrapper">
@@ -58,6 +47,9 @@ const Dangchan = () => {
                       color: "white",
                       fontWeight: "bold",
                       fontSize: "1rem",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
                     }}
                     size="large"
                   >
@@ -65,26 +57,7 @@ const Dangchan = () => {
                     WEB PAGE 방문하기
                   </Button>
                 </a>
-                <a
-                  style={{ textDecoration: "none" }}
-                  href="https://github.com/MinjoonHK/sesacFrontWebApp"
-                >
-                  <Button
-                    style={{
-                      alignItems: "center",
-                      height: "50px",
-                      backgroundColor: "transparent",
-                      fontWeight: "bold",
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    <GithubOriginal size={30} style={{ marginRight: "5%" }} />{" "}
-                    GITHUB 에서 확인하기
-                  </Button>
-                </a>
+                <ProjectGithubLinkButton href="https://github.com/MinjoonHK/sesacFrontWebApp" />
               </div>
             </div>
             <div className="ProjectSummaryWrapper">
@@ -161,39 +134,11 @@ const Dangchan = () => {
           </div>
         </div>
       </div>
-      <Modal
-        className="modalContent"
+      <ProjectImageModal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
-        closeTimeoutMS={500}
-      >
-        <div
-          onClick={(e) => {
-            if (e.target == e.currentTarget) {
-              setModalOpen(false);
-            }
-          }}
-          className="modalInner"
-        >
-          <div
-            className="modalCarouselWrapper"
-            onClick={(e) => {
-              e.stopPropagation();
-            }}
-          >
-            <Carousel swipeable useKeyboardArrows>
-              {DangchanImg.map((img, idx) => {
-                return (
-                  <div key={`CarouselImg${idx}`} className="CarouselImageBox">
-                    <div className="ImageTitle">{img.imgTitle}</div>
-                    <img src={img.imgSrc} alt="이미지를 표시할수 없습니다!" />
-                  </div>
-                );
-              })}
-            </Carousel>
-          </div>
-        </div>
-      </Modal>
+        images={DangchanImg}
+      />
     </div>
   );
 };

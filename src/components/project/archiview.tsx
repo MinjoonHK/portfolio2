@@ -1,23 +1,20 @@
 import { useState } from "react";
 import "./project.css";
-import AlgologImg from "./img/algologImg";
-import { Button } from "antd";
-import { GlobalOutlined } from "@ant-design/icons";
+import ArchiviewImg from "./img/archiviewImg";
 import ProjectImageModal from "./ProjectImageModal";
 import ProjectGithubLinkButton from "./ProjectGithubLinkButton";
 
-const Algolog = () => {
+const Archiview = () => {
   const [modalOpen, setModalOpen] = useState(false);
   return (
     <div className="ProjectWrapper">
       <div className="ProjectInnerWrapper">
         <div className="ProjectTitle">
           <div>
-            <h2>Algolog</h2>
+            <h2>아카이뷰</h2>
           </div>
-          <div>2024.02 - 2024.03</div>
+          <div>2025.11 - 2026.03</div>
         </div>
-        {/* <hr style={{ width: "80%" }} /> */}
         <div className="ProjectContentWrapper">
           <div className="ProjectContentInnerWraper">
             <div className="ProjectContentLeft">
@@ -29,7 +26,7 @@ const Algolog = () => {
               >
                 <div className="ImageBox">
                   <img
-                    src="/img/algolog_logindark.png"
+                    src="/img/archiview_banner.png"
                     alt="이미지가 표시되지 않습니다"
                   />
                 </div>
@@ -38,55 +35,27 @@ const Algolog = () => {
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
               <div className="projectButton">
-                <a href="http://algorithmlog.com/">
-                  <Button
-                    style={{
-                      height: "50px",
-                      width: "100%",
-                      backgroundColor: "black",
-                      color: "white",
-                      fontWeight: "bold",
-                      fontSize: "1rem",
-                    }}
-                    size="large"
-                  >
-                    <GlobalOutlined />
-                    WEB PAGE 방문하기
-                  </Button>
-                </a>
-                <ProjectGithubLinkButton href="https://github.com/MinjoonHK/AlgoLog_Reboot" />
+                <ProjectGithubLinkButton href="https://github.com/MinjoonHK" />
               </div>
             </div>
             <div className="ProjectSummaryWrapper">
               <div className="ProjectSummaryTitle">PROJECT SUMMARY</div>
               <div className="ProjectSummaryContent">
+                인스타그램에 저장하거나 DM으로 보내두었던 정보를 나중에 찾기
+                어렵다는 문제에서 출발한 서비스 <b>아카이뷰</b> 입니다.
                 <p>
-                  <b>Next.js</b> 와 <b>MongoDB</b> 학습을위해 만든 토이 프로젝트
-                  입니다.
+                  &apos;SNS 속에 흩어진 정보를 제대로 쓰고 싶다&apos;는
+                  생각으로 기획했고, 5인 팀에서 프론트엔드로 참여했습니다.
                 </p>
                 <p>
-                  <b>Next.js</b> 프레임워크를 사용하여 처음으로
-                  <b>SSR(Server-side Rendering)</b> <br />을 구현해보았습니다.
-                  SSR을 통해 초기 로딩시간을 줄이고 SEO에 유리한 페이지를 만들수
-                  있었습니다.
+                  <b>React Native(Expo)</b>로 모바일 앱과 <b>Next.js</b>로 웹을
+                  함께 다루었고, <b>Feature-Sliced Design(FSD)</b>과{" "}
+                  <b>pnpm·Turborepo</b> 모노레포로 코드 구조를 나누었습니다.
                 </p>
                 <p>
-                  <b>NextAuth</b> 라이브러리를 활용하여 빠르게 원하는 기능을
-                  구현할수 있었습니다. 타겟 유저층의 편의를 고려하여 일반
-                  로그인을 비롯하여 <b>Naver</b>, <b>Github</b>,그리고{" "}
-                  <b>Google</b> 을 통한 oAuth 로그인을 허용하였습니다.
-                  <br />
-                </p>
-                <p>
-                  <b>ChatGPT API</b> 를 통해 문제의 답을 반례와 함께 제공하는
-                  페이지를 구현하였습니다.
-                </p>
-                <p>
-                  Github Actions를 통해 <b>CI/CD</b> 파이프라인을 구축하여 실제
-                  배포 전에
-                  <b>Preview Deploy</b>에 먼저 배포하도록 설정하여 배포전 점검후{" "}
-                  <b>main</b> 브렌치에 머지할때 자동으로 <b>Vercel</b>에
-                  배포되도록 설정하였습니다.
+                  앱과 웹은 <b>WebView 브릿지</b>로 연결했으며,{" "}
+                  <b>App Store</b>, <b>Google Play</b>, <b>웹</b>에서 이용할 수
+                  있습니다.
                 </p>
               </div>
               <div className="ProjectSummaryTitle">PROJECT OVERVIEW</div>
@@ -102,18 +71,23 @@ const Algolog = () => {
                   <tbody style={{ verticalAlign: "top" }}>
                     <tr>
                       <td>프로젝트 유형:</td>
-                      <td>개인 프로젝트</td>
+                      <td>5인 팀프로젝트</td>
                     </tr>
                     <tr>
                       <td>프로젝트 기여도:</td>
-                      <td>100%</td>
+                      <td>프론트엔드 (모바일·웹)</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>
                       <td>
-                        React.js, Next.js, Redux Toolkit, TypeScript, MongoDB,
-                        Antd
+                        React Native, Expo, Next.js, TypeScript,
+                        <br />
+                        WebView 브릿지, FSD
                       </td>
+                    </tr>
+                    <tr>
+                      <td>Build:</td>
+                      <td>Expo, Next.js, Turborepo</td>
                     </tr>
                     <tr>
                       <td>CI/CD:</td>
@@ -121,7 +95,7 @@ const Algolog = () => {
                     </tr>
                     <tr>
                       <td>Deploy:</td>
-                      <td>Vercel</td>
+                      <td>App Store, Google Play, Web</td>
                     </tr>
                   </tbody>
                 </table>
@@ -133,10 +107,10 @@ const Algolog = () => {
       <ProjectImageModal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
-        images={AlgologImg}
+        images={ArchiviewImg}
       />
     </div>
   );
 };
 
-export default Algolog;
+export default Archiview;

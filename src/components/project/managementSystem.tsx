@@ -1,23 +1,10 @@
-import { useEffect, useState } from "react";
-import Modal from "react-modal";
+import { useState } from "react";
 import "./project.css";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ManagementSystemImg from "./img/managementSystemImg";
-import { Button } from "antd";
-import { GlobalOutlined } from "@ant-design/icons";
-import { GithubOriginal } from "devicons-react";
+import ProjectImageModal from "./ProjectImageModal";
+
 const ManagementSystem = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  useEffect(() => {
-    if (modalOpen) {
-      document.querySelector(".modal-content")?.classList.add("open");
-      document.body.style.overflow = "hidden";
-    } else {
-      document.querySelector(".modal-content")?.classList.remove("open");
-      document.body.style.overflow = "auto";
-    }
-  }, [modalOpen]);
   return (
     <div className="ProjectWrapper">
       <div className="ProjectInnerWrapper">
@@ -109,39 +96,11 @@ const ManagementSystem = () => {
           </div>
         </div>
       </div>
-      <Modal
-        className="modalContent"
+      <ProjectImageModal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
-        closeTimeoutMS={500}
-      >
-        <div
-          onClick={(e) => {
-            if (e.target == e.currentTarget) {
-              setModalOpen(false);
-            }
-          }}
-          className="modalInner"
-        >
-          <div
-            className="modalCarouselWrapper"
-            onClick={(e) => {
-              e.stopPropagation();
-            }}
-          >
-            <Carousel swipeable useKeyboardArrows>
-              {ManagementSystemImg.map((img, idx) => {
-                return (
-                  <div key={`CarouselImg${idx}`} className="CarouselImageBox">
-                    <div className="ImageTitle">{img.imgTitle}</div>
-                    <img src={img.imgSrc} alt="이미지를 표시할수 없습니다!" />
-                  </div>
-                );
-              })}
-            </Carousel>
-          </div>
-        </div>
-      </Modal>
+        images={ManagementSystemImg}
+      />
     </div>
   );
 };

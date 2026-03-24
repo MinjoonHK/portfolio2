@@ -8,6 +8,7 @@ import ResumeEditor from "./resumeEditor";
 import PersonalBlog from "./personalBlog";
 import Portfolio from "./portfolio";
 import Dangchan from "./dangchan";
+import Archiview from "./archiview";
 
 const Project = () => {
   return (
@@ -24,13 +25,16 @@ const Project = () => {
           textAlign: "center",
           fontSize: "2rem",
           fontWeight: "bold",
-          textDecoration: "underline",
-          color: "white",
+          letterSpacing: "4px",
+          color: "#cce4ff",
+          textShadow:
+            "0 0 10px #7eb8ff, 0 0 24px #4a90d9, 0 0 40px rgba(74,144,217,0.4)",
         }}
       >
-        Projects
+        PROJECTS
       </div>
       <div className="projectContentContainer">
+        <Archiview />
         <Dangchan/>
         <ResumeEditor />
         <Portfolio />

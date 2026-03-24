@@ -1,22 +1,11 @@
-import { useEffect, useState } from "react";
-import Modal from "react-modal";
+import { useState } from "react";
 import "./project.css";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import PersonalBlogImg from "./img/personalBlogImg";
-import { Button } from "antd";
-import { GithubOriginal } from "devicons-react";
+import ProjectImageModal from "./ProjectImageModal";
+import ProjectGithubLinkButton from "./ProjectGithubLinkButton";
+
 const PersonalBlog = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  useEffect(() => {
-    if (modalOpen) {
-      document.querySelector(".modal-content")?.classList.add("open");
-      document.body.style.overflow = "hidden";
-    } else {
-      document.querySelector(".modal-content")?.classList.remove("open");
-      document.body.style.overflow = "auto";
-    }
-  }, [modalOpen]);
   return (
     <div className="ProjectWrapper">
       <div className="ProjectInnerWrapper">
@@ -44,26 +33,7 @@ const PersonalBlog = () => {
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
               <div className="projectButton">
-                <a
-                  style={{ textDecoration: "none" }}
-                  href="https://github.com/MinjoonHK/Personal_Blog"
-                >
-                  <Button
-                    style={{
-                      alignItems: "center",
-                      height: "50px",
-                      backgroundColor: "transparent",
-                      fontWeight: "bold",
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    <GithubOriginal size={30} style={{ marginRight: "5%" }} />{" "}
-                    GITHUB 에서 확인하기
-                  </Button>
-                </a>
+                <ProjectGithubLinkButton href="https://github.com/MinjoonHK/Personal_Blog" />
               </div>
             </div>
             <div className="ProjectSummaryWrapper">
@@ -122,39 +92,11 @@ const PersonalBlog = () => {
           </div>
         </div>
       </div>
-      <Modal
-        className="modalContent"
+      <ProjectImageModal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
-        closeTimeoutMS={500}
-      >
-        <div
-          onClick={(e) => {
-            if (e.target == e.currentTarget) {
-              setModalOpen(false);
-            }
-          }}
-          className="modalInner"
-        >
-          <div
-            className="modalCarouselWrapper"
-            onClick={(e) => {
-              e.stopPropagation();
-            }}
-          >
-            <Carousel swipeable useKeyboardArrows>
-              {PersonalBlogImg.map((img, idx) => {
-                return (
-                  <div key={`CarouselImg${idx}`} className="CarouselImageBox">
-                    <div className="ImageTitle">{img.imgTitle}</div>
-                    <img src={img.imgSrc} alt="이미지를 표시할수 없습니다!" />
-                  </div>
-                );
-              })}
-            </Carousel>
-          </div>
-        </div>
-      </Modal>
+        images={PersonalBlogImg}
+      />
     </div>
   );
 };
