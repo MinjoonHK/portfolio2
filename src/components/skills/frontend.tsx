@@ -31,7 +31,34 @@ const Frontend = () => {
             <ReactOriginalWordmark size={90} />
           </div>
           <div className="skillsItems">
-            <TypescriptOriginal size={90} />
+            <div
+              style={{
+                width: 90,
+                height: 90,
+                borderRadius: "50%",
+                overflow: "hidden",
+                position: "relative",
+                boxShadow:
+                  "0 0 0 2px rgba(49,120,198,0.9), 0 0 16px rgba(49,120,198,0.6), 0 0 36px rgba(49,120,198,0.25)",
+                flexShrink: 0,
+              }}
+            >
+              {/* Glossy highlight */}
+              <div
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  height: "45%",
+                  background:
+                    "linear-gradient(to bottom, rgba(255,255,255,0.22), transparent)",
+                  zIndex: 1,
+                  pointerEvents: "none",
+                }}
+              />
+              <TypescriptOriginal size={90} />
+            </div>
           </div>
           <div className="skillsItems">
             <img

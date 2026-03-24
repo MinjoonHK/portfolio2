@@ -1,8 +1,8 @@
 .skillsWrapper {
-  height: 100vh;
+  height: auto;
   width: 100%;
   background: linear-gradient(to bottom, rgba(8,12,30,0) 0%, rgba(8,12,30,0.2) 80px, rgba(8,12,30,0.5) 160px, rgba(8,12,30,0.55) 100%);
-  padding: 1% 0;
+  padding: 1% 0 5% 0;
 }
 
 .skillsContentContainer {
