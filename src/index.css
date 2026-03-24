@@ -7,21 +7,6 @@
   }
 }
 
-.canvas-loader {
-  width: 50px;
-  height: 50px;
-  border: 3px solid rgba(255, 255, 255, 0.2);
-  border-top-color: #F1F1F1;
-  border-radius: 50%;
-  animation: canvas-loader-spin 1s linear infinite;
-}
-
-@keyframes canvas-loader-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 @keyframes bubblePop {
   0%,
   100% {
