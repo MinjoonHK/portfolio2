@@ -37,26 +37,15 @@ const FYP = () => {
               <div className="ClickImageDescription">
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
-              <div className="projectButton">
-                <ProjectGithubLinkButton href="https://github.com/MinjoonHK/vxt" />
-                <a
-                  style={{ textDecoration: "none" }}
-                  href="https://drive.google.com/file/d/1DnBJjYnD865rR_pSP4vK570wJWQ3_PCM/view?usp=sharing"
-                >
-                  <Button
-                    style={{
-                      alignItems: "center",
-                      height: "50px",
-                      backgroundColor: "#5CB083",
-                      color: "white",
-                      fontWeight: "bold",
-                      width: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    <VideoCameraOutlined />
+              <div className="projectLinksColumn">
+                <div className="projectButton">
+                  <ProjectGithubLinkButton href="https://github.com/MinjoonHK/vxt" />
+                </div>
+                <a href="https://drive.google.com/file/d/1DnBJjYnD865rR_pSP4vK570wJWQ3_PCM/view?usp=sharing">
+                  <Button className="projectDemoVideoButton" type="default">
+                    <span className="projectDemoVideoIcon">
+                      <VideoCameraOutlined />
+                    </span>
                     시연영상 시청하기
                   </Button>
                 </a>
@@ -106,8 +95,8 @@ const FYP = () => {
                       <td>3인 팀 프로젝트</td>
                     </tr>
                     <tr>
-                      <td>프로젝트 기여도:</td>
-                      <td>그림 그리기(100%), 음성인식(100%), GPT(50%)</td>
+                      <td>담당 역할:</td>
+                      <td>AI</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>
