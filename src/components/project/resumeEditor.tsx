@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "./project.css";
 import ResumeEditorImg from "./img/resumeEditorImg";
-import { Button } from "antd";
-import { GlobalOutlined } from "@ant-design/icons";
 import ProjectImageModal from "./ProjectImageModal";
 import ProjectGithubLinkButton from "./ProjectGithubLinkButton";
 
@@ -38,22 +36,6 @@ const ResumeEditor = () => {
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
               <div className="projectButton">
-                <a href="https://reditor.me/">
-                  <Button
-                    style={{
-                      height: "50px",
-                      width: "100%",
-                      backgroundColor: "black",
-                      color: "white",
-                      fontWeight: "bold",
-                      fontSize: "1rem",
-                    }}
-                    size="large"
-                  >
-                    <GlobalOutlined />
-                    WEB PAGE 방문하기
-                  </Button>
-                </a>
                 <ProjectGithubLinkButton href="https://github.com/MinjoonHK/resumeEditorFrontend" />
               </div>
             </div>
@@ -67,8 +49,8 @@ const ResumeEditor = () => {
                   보고자 해당 프로젝트를 기획하게 되었습니다.
                 </p>
                 <p>
-                  저는 5인으로 이루어진 팀에 팀원으로 참여하여 프론트엔드 95%
-                  백엔드 10%를 담당하였습니다
+                  5인 팀에 팀원으로 참여하여 프론트엔드를 주로 담당하고
+                  백엔드는 일부 지원하였습니다.
                 </p>
                 <p>
                   <b>Lazy loading, Suspense</b>를 활용하여 <b>Code Splitting</b>
@@ -97,8 +79,8 @@ const ResumeEditor = () => {
                       <td>5인 팀프로젝트</td>
                     </tr>
                     <tr>
-                      <td>프로젝트 기여도:</td>
-                      <td>프론트엔드: 95% 백엔드: 10%</td>
+                      <td>담당 역할:</td>
+                      <td>프론트엔드, 백엔드</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>

@@ -1,8 +1,6 @@
 import { useState } from "react";
 import "./project.css";
 import VxtKoreaImg from "./img/vxtKoreaImg";
-import { Button } from "antd";
-import { GlobalOutlined } from "@ant-design/icons";
 import ProjectImageModal from "./ProjectImageModal";
 import ProjectGithubLinkButton from "./ProjectGithubLinkButton";
 
@@ -35,22 +33,6 @@ const VxtKorea = () => {
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
               <div className="projectButton">
-                <a href="https://vxtkorea.net//">
-                  <Button
-                    style={{
-                      height: "50px",
-                      width: "100%",
-                      backgroundColor: "black",
-                      color: "white",
-                      fontWeight: "bold",
-                      fontSize: "1rem",
-                    }}
-                    size="large"
-                  >
-                    <GlobalOutlined />
-                    WEB PAGE 방문하기
-                  </Button>
-                </a>
                 <ProjectGithubLinkButton href="https://github.com/MinjoonHK/vxt" />
               </div>
             </div>
@@ -95,8 +77,8 @@ const VxtKorea = () => {
                       <td>개인 프로젝트</td>
                     </tr>
                     <tr>
-                      <td>프로젝트 기여도:</td>
-                      <td>100%</td>
+                      <td>담당 역할:</td>
+                      <td>프론트엔드, 백엔드</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>

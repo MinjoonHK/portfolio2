@@ -2,11 +2,9 @@ import React from "react";
 import "./project.css";
 import Algolog from "./algolog";
 import VxtKorea from "./vxtKorea";
-import ManagementSystem from "./managementSystem";
 import FYP from "./fyp";
 import ResumeEditor from "./resumeEditor";
 import PersonalBlog from "./personalBlog";
-import Portfolio from "./portfolio";
 import Dangchan from "./dangchan";
 import Archiview from "./archiview";
 
@@ -37,10 +35,8 @@ const Project = () => {
         <Archiview />
         <Dangchan/>
         <ResumeEditor />
-        <Portfolio />
         <Algolog />
         <VxtKorea />
-        <ManagementSystem />
         <FYP />
         <PersonalBlog />
       </div>

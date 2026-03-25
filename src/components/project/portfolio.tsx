@@ -68,8 +68,8 @@ const Portfolio = () => {
                       <td>개인 프로젝트</td>
                     </tr>
                     <tr>
-                      <td>프로젝트 기여도:</td>
-                      <td>100%</td>
+                      <td>담당 역할:</td>
+                      <td>프론트엔드</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>

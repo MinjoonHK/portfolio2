@@ -1,7 +1,5 @@
 import { useState } from "react";
 import "./project.css";
-import { Button } from "antd";
-import { GlobalOutlined } from "@ant-design/icons";
 import DangchanImg from "./img/dangchanImg";
 import ProjectImageModal from "./ProjectImageModal";
 import ProjectGithubLinkButton from "./ProjectGithubLinkButton";
@@ -38,25 +36,6 @@ const Dangchan = () => {
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
               <div className="projectButton">
-                <a href="https://github.com/MinjoonHK/sesacFrontWebApp">
-                  <Button
-                    style={{
-                      height: "50px",
-                      width: "100%",
-                      backgroundColor: "black",
-                      color: "white",
-                      fontWeight: "bold",
-                      fontSize: "1rem",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                    size="large"
-                  >
-                    <GlobalOutlined />
-                    WEB PAGE 방문하기
-                  </Button>
-                </a>
                 <ProjectGithubLinkButton href="https://github.com/MinjoonHK/sesacFrontWebApp" />
               </div>
             </div>
@@ -70,8 +49,8 @@ const Dangchan = () => {
                   제작하였습니다.
                 </p>
                 <p>
-                  4명으로 이루어진 팀에서 팀장으로 참여하여 프론트엔드 100%,
-                  백엔드 100%를 담당하였습니다.
+                  4명으로 이루어진 팀에서 팀장으로 참여하여 프론트엔드·백엔드
+                  구현을 담당하였습니다.
                 </p>
                 <p>
                   <b>PWA(Progressive Web App)</b> 기술을 도입하여 사용자가
@@ -104,8 +83,8 @@ const Dangchan = () => {
                       <td>4인 팀프로젝트</td>
                     </tr>
                     <tr>
-                      <td>프로젝트 기여도:</td>
-                      <td>프론트엔드: 100% 백엔드: 100%, AI: 50%</td>
+                      <td>담당 역할:</td>
+                      <td>팀장, 프론트엔드, 백엔드, AI</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>

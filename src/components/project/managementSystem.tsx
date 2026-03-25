@@ -76,8 +76,8 @@ const ManagementSystem = () => {
                       <td>인턴십</td>
                     </tr>
                     <tr>
-                      <td>프로젝트 기여도:</td>
-                      <td>UI(100%), API(50%), DB(50%)</td>
+                      <td>담당 역할:</td>
+                      <td>프론트엔드, 백엔드</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>
