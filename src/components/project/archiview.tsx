@@ -3,6 +3,12 @@ import "./project.css";
 import ArchiviewImg from "./img/archiviewImg";
 import ProjectImageModal from "./ProjectImageModal";
 import ProjectGithubLinkButton from "./ProjectGithubLinkButton";
+import ProjectStoreLinkButton from "./ProjectStoreLinkButton";
+
+const ARCHIVIEW_PLAY_STORE_HREF =
+  "https://play.google.com/store/apps/details?id=com.archiview.app&pcampaignid=web_share";
+const ARCHIVIEW_APP_STORE_HREF =
+  "https://apps.apple.com/kr/app/%EC%95%84%EC%B9%B4%EC%9D%B4%EB%B7%B0/id6757837238";
 
 const Archiview = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -34,8 +40,22 @@ const Archiview = () => {
               <div className="ClickImageDescription">
                 클릭하여 프로젝트 이미지를 확인해보세요!
               </div>
-              <div className="projectButton">
-                <ProjectGithubLinkButton href="https://github.com/MinjoonHK" />
+              <div className="projectLinksColumn">
+                <div className="projectButton">
+                  <ProjectGithubLinkButton href="https://github.com/Central-MakeUs/Archiview-Front" />
+                </div>
+                <div className="projectStoreRow">
+                  <ProjectStoreLinkButton
+                    href={ARCHIVIEW_PLAY_STORE_HREF}
+                    iconSrc="/icon/google-play-store-icon.svg"
+                    label="Google Play"
+                  />
+                  <ProjectStoreLinkButton
+                    href={ARCHIVIEW_APP_STORE_HREF}
+                    iconSrc="/icon/app-icon.svg"
+                    label="App Store"
+                  />
+                </div>
               </div>
             </div>
             <div className="ProjectSummaryWrapper">
@@ -44,18 +64,17 @@ const Archiview = () => {
                 인스타그램에 저장하거나 DM으로 보내두었던 정보를 나중에 찾기
                 어렵다는 문제에서 출발한 서비스 <b>아카이뷰</b> 입니다.
                 <p>
-                  &apos;SNS 속에 흩어진 정보를 제대로 쓰고 싶다&apos;는
-                  생각으로 기획했고, 5인 팀에서 프론트엔드로 참여했습니다.
+                  &apos;SNS 속에 흩어진 정보를 제대로 쓰고 싶다&apos;는 생각으로
+                  기획했고, 5인 팀에서 프론트엔드로 참여했습니다.
                 </p>
                 <p>
                   <b>React Native(Expo)</b>로 모바일 앱과 <b>Next.js</b>로 웹을
-                  함께 다루었고, <b>Feature-Sliced Design(FSD)</b>과{" "}
-                  <b>pnpm·Turborepo</b> 모노레포로 코드 구조를 나누었습니다.
+                  함께 다루었고, <b>Feature-Sliced Design(FSD)</b>과 <b>pnpm</b>{" "}
+                  모노레포로 코드 구조를 나누었습니다.
                 </p>
                 <p>
-                  앱과 웹은 <b>WebView 브릿지</b>로 연결했으며,{" "}
-                  <b>App Store</b>, <b>Google Play</b>, <b>웹</b>에서 이용할 수
-                  있습니다.
+                  앱과 웹은 <b>WebView 브릿지</b>로 연결했으며, <b>App Store</b>,{" "}
+                  <b>Google Play</b>에서 이용할 수 있습니다.
                 </p>
               </div>
               <div className="ProjectSummaryTitle">PROJECT OVERVIEW</div>
@@ -74,15 +93,15 @@ const Archiview = () => {
                       <td>5인 팀프로젝트</td>
                     </tr>
                     <tr>
-                      <td>프로젝트 기여도:</td>
-                      <td>프론트엔드 (모바일·웹)</td>
+                      <td>담당 역할:</td>
+                      <td>프론트엔드</td>
                     </tr>
                     <tr>
                       <td>Tech Stack:</td>
                       <td>
                         React Native, Expo, Next.js, TypeScript,
                         <br />
-                        WebView 브릿지, FSD
+                        WebView 브릿지, FSD, React Query, Ky
                       </td>
                     </tr>
                     <tr>
@@ -95,7 +114,7 @@ const Archiview = () => {
                     </tr>
                     <tr>
                       <td>Deploy:</td>
-                      <td>App Store, Google Play, Web</td>
+                      <td>App Store, Google Play, Vercel</td>
                     </tr>
                   </tbody>
                 </table>
