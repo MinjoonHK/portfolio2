@@ -26,7 +26,7 @@ const socialLinks = [
 const Footer = () => {
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
-    href: string
+    href: string,
   ) => {
     e.preventDefault();
     const target = document.querySelector(href);
@@ -49,7 +49,8 @@ const Footer = () => {
         <div className="flex flex-col gap-2">
           <h3 className="text-lg font-bold tracking-wider">Minjoon Park</h3>
           <p className="text-xs text-white/40">
-            <FontAwesomeIcon icon={faCopyright} /> 2026 Minjoon Park. All rights reserved.
+            <FontAwesomeIcon icon={faCopyright} /> 2026 Minjoon Park. All rights
+            reserved.
           </p>
         </div>
 
@@ -76,14 +77,16 @@ const Footer = () => {
 
           <div className="flex flex-col gap-3">
             <h4 className="text-xs font-semibold tracking-widest text-white/40 uppercase">
-              Contact
+              Networking
             </h4>
             <ul className="flex flex-col gap-3">
               {socialLinks.map((link) => (
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    target={link.href.startsWith("mailto") ? undefined : "_blank"}
+                    target={
+                      link.href.startsWith("mailto") ? undefined : "_blank"
+                    }
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors duration-200"
                   >
