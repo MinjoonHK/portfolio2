@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./aboutMe.css";
 
 const AboutMe = () => {
+  const rootRef = useRef<HTMLDivElement>(null);
+  const [revealed, setRevealed] = useState(false);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    if (!root) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setRevealed(true);
+        });
+      },
+      { threshold: 0.08, rootMargin: "0px 0px -6% 0px" }
+    );
+
+    observer.observe(root);
+    return () => observer.disconnect();
+  }, []);
+
+  const revealRow = (delayMs: number) => {
+    const cls = `aboutRevealRow${revealed ? " aboutRevealRow--visible" : ""}`;
+    const style = { "--reveal-delay": `${delayMs}ms` } as React.CSSProperties;
+    return { className: cls, style };
+  };
+
   return (
     <div
+      ref={rootRef}
       className="aboutMeWrapper"
       style={{
         background:
@@ -13,7 +40,7 @@ const AboutMe = () => {
       }}
     >
       <div
-        className="aboutMeHeader"
+        className={`aboutMeHeader ${revealRow(0).className}`}
         style={{
           width: "100%",
           textAlign: "center",
@@ -23,6 +50,7 @@ const AboutMe = () => {
           color: "#cce4ff",
           textShadow:
             "0 0 10px #7eb8ff, 0 0 24px #4a90d9, 0 0 40px rgba(74,144,217,0.4)",
+          ...revealRow(0).style,
         }}
       >
         ABOUT ME
@@ -39,7 +67,11 @@ const AboutMe = () => {
         }}
       >
         <div className="aboutMeContentGrid">
-          <div className="aboutContentItems">
+          <div
+            className={`aboutMeGridRow ${revealRow(140).className}`}
+            style={revealRow(140).style}
+          >
+            <div className="aboutContentItems">
             <div className="aboutContentHeader">PROFILE</div>
 
             <table style={{ width: "100%" }}>
@@ -102,12 +134,17 @@ const AboutMe = () => {
               <tbody>
                 <tr>
                   <td>2023.06-2023.08</td>
-                  <td>KELLON EPC(홍콩)</td>
+                  <td>KELLON EPC (인턴)</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div className="aboutContentItems">
+          </div>
+          <div
+            className={`aboutMeGridRow ${revealRow(280).className}`}
+            style={revealRow(280).style}
+          >
+            <div className="aboutContentItems">
             <div className="aboutContentHeader">LANGUAGE</div>
 
             <table style={{ width: "100%" }}>
@@ -172,10 +209,11 @@ const AboutMe = () => {
                 </tr>
                 <tr>
                   <td>이메일:</td>
-                  <td>minjoon.park.hk@gmail.com</td>
+                  <td>minjoon.park.dev@gmail.com</td>
                 </tr>
               </tbody>
             </table>
+          </div>
           </div>
         </div>
       </div>

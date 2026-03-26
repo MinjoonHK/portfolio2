@@ -1,3 +1,28 @@
+.aboutRevealRow {
+  opacity: 0;
+  transform: translateY(26px);
+  transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+  transition-delay: var(--reveal-delay, 0s);
+}
+
+.aboutRevealRow--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aboutRevealRow {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    transition-delay: 0s !important;
+  }
+
+  .aboutContentItems {
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+}
+
 .aboutContentHeader {
   font-size: 1.1rem;
   font-weight: bold;
@@ -37,6 +62,12 @@
 
 .aboutMeContentGrid {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutMeGridRow {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
@@ -47,8 +78,11 @@
     flex-direction: column;
   }
 
+  .aboutMeGridRow {
+    grid-template-columns: 1fr;
+  }
+
   .aboutMeContentGrid {
-    grid-template-columns: repeat(1, 1fr);
     margin-left: 0;
   }
 
