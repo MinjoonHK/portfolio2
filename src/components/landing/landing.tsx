@@ -5,7 +5,9 @@ const Landing = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = () => {
-    window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
+    document
+      .getElementById("about")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   useEffect(() => {
