@@ -44,18 +44,18 @@ const Footer = () => {
       }}
       className="px-[10%] py-10"
     >
-      <div className="flex justify-between items-start">
+      <div className="flex flex-col items-center gap-8 text-center md:flex-row md:items-start md:justify-between md:gap-0 md:text-left">
         {/* Left: Brand + Copyright */}
-        <div className="flex flex-col gap-2">
+        <div className="flex w-full flex-col items-center gap-2 md:w-auto md:items-start">
           <h3 className="text-lg font-bold tracking-wider">Minjoon Park</h3>
-          <p className="text-xs text-white/40">
+          <p className="max-w-[min(100%,22rem)] text-xs leading-relaxed text-white/40 md:max-w-none">
             <FontAwesomeIcon icon={faCopyright} /> 2026 Minjoon Park. All rights
             reserved.
           </p>
         </div>
 
-        {/* Right: Navigation + Contact */}
-        <div className="flex gap-12">
+        {/* Right: Navigation + Networking */}
+        <div className="flex flex-row justify-center gap-10 md:justify-start md:gap-12">
           <div className="flex flex-col gap-3">
             <h4 className="text-xs font-semibold tracking-widest text-white/40 uppercase">
               Navigation
