@@ -18,21 +18,33 @@ const MainPage = () => {
     <div className="relative">
       <StarsBackground />
       <div className="relative z-10">
-      {/* <Navbar refs={{ aboutRef, skillsRef, projectRef, archivingRef }} /> */}
-      <Landing />
-      <section id="about" ref={aboutRef} style={{ scrollMarginTop: "10vh" }}>
-        <AboutMe />
-      </section>
-      <section id="skills" ref={skillsRef} style={{ scrollMarginTop: "10vh" }}>
-        <Skills />
-      </section>
-      <section id="projects" ref={projectRef} style={{ scrollMarginTop: "10vh" }}>
-        <Project />
-      </section>
-      <section id="archiving" ref={archivingRef} style={{ scrollMarginTop: "10vh" }}>
-        <Archiving />
-      </section>
-      <Footer />
+        {/* <Navbar refs={{ aboutRef, skillsRef, projectRef, archivingRef }} /> */}
+        <Landing />
+        <section id="about" ref={aboutRef} style={{ scrollMarginTop: "10vh" }}>
+          <AboutMe />
+        </section>
+        <section
+          id="skills"
+          ref={skillsRef}
+          style={{ scrollMarginTop: "10vh" }}
+        >
+          <Skills />
+        </section>
+        <section
+          id="projects"
+          ref={projectRef}
+          style={{ scrollMarginTop: "10vh" }}
+        >
+          <Project />
+        </section>
+        <section
+          id="archiving"
+          ref={archivingRef}
+          style={{ scrollMarginTop: "10vh" }}
+        >
+          <Archiving />
+        </section>
+        <Footer />
       </div>
       <RocketScrollButton />
     </div>

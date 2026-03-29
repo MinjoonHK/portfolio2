@@ -1,7 +1,9 @@
 .aboutRevealRow {
   opacity: 0;
   transform: translateY(26px);
-  transition: opacity 0.55s ease-out, transform 0.55s ease-out;
+  transition:
+    opacity 0.55s ease-out,
+    transform 0.55s ease-out;
   transition-delay: var(--reveal-delay, 0s);
 }
 
@@ -19,7 +21,9 @@
   }
 
   .aboutContentItems {
-    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    transition:
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
   }
 }
 
@@ -40,16 +44,22 @@
 
 .aboutContentItems {
   border: 1px solid rgba(100, 160, 255, 0.25);
-  box-shadow: 0 0 10px rgba(100, 160, 255, 0.15), inset 0 0 20px rgba(100, 160, 255, 0.03);
+  box-shadow:
+    0 0 10px rgba(100, 160, 255, 0.15),
+    inset 0 0 20px rgba(100, 160, 255, 0.03);
   background: rgba(255, 255, 255, 0.03);
   border-radius: 8px;
   padding: 16px;
   backdrop-filter: blur(4px);
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .aboutContentItems:hover {
-  box-shadow: 0 0 18px rgba(100, 160, 255, 0.3), inset 0 0 20px rgba(100, 160, 255, 0.06);
+  box-shadow:
+    0 0 18px rgba(100, 160, 255, 0.3),
+    inset 0 0 20px rgba(100, 160, 255, 0.06);
   border-color: rgba(100, 160, 255, 0.45);
 }
 
